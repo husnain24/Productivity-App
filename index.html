@@ -15,7 +15,7 @@
 </head>
 <body>
   <header>
-    <h1>TO DO LIST</h1>
+    <h1>Productivity App</h1>
     <form id="task-form">
       <input type="text" id="new-task-input" placeholder="What is your task?"/>
       <button id="new-task-submit">Add</button>
@@ -23,7 +23,18 @@
   </header>
 
   <section class="task-container">
+    <div class="time-container">
+      <div class="time-form">
+        <span>Minutes: </span>
+        <input class="time-input" type="text">
+        <button id="start">Start</button>
+      </div>
+      <div class="time">--</div>
+      <button id="reset">Reset</button>
+    </div>
+
     <h2>Tasks</h2>
+
     <div class="tasks-list">
       <!-- <div class="todo">
         <div class="check-done">

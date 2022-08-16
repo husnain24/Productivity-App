@@ -170,3 +170,16 @@ header form {
   text-decoration: line-through;
   opacity: 0.5;
 }
+
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(17, 175, 86);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 5px;
+}
