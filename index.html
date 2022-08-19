@@ -22,19 +22,79 @@
     </form>
   </header>
 
-  <section class="task-container">
-    <div class="time-container">
-      <div class="time-form">
-        <span>Minutes: </span>
-        <input class="time-input" type="text">
-        <button id="start">Start</button>
+  <div class="time-music-container">
+    <div class="time-music-grid">
+      <div class="time-container">
+        <h3>Timer</h3>
+        <div class="time-form">
+          <span>Mins: </span>
+          <input class="time-input" type="text">
+          <button class="timeButton" id="start">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="time">--</div>
+        <button class="timeButton" id="reset">
+          <i class="fa-solid fa-arrows-rotate"></i>
+        </button>
       </div>
-      <div class="time">--</div>
-      <button id="reset">Reset</button>
+
+      <div class="time-container">
+        <h3>Music</h3>
+
+        <div class="music-container" id="hello">
+          <div class="music-link">
+            <button class="play-pause-link-btn" id="musicBtn1" onclick="playMusic('experience')">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <span>Ludovico Einaudi - Experience</span>
+            <a href="https://youtu.be/hN_q-_nGv4U" class="link" target="_blank">
+              <button class="play-pause-link-btn" id="link-btn">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </button>
+            </a>
+          </div>
+
+          <div class="music-link">
+            <button class="play-pause-link-btn" id="musicBtn2" onclick="playMusic('jardin')">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <span>Stephan Moccio - Le Jardin de Monsieur Monet</span>
+            <a href="https://youtu.be/Ebi9cx6HbL0" class="link" target="_blank">
+              <button class="play-pause-link-btn" id="link-button">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </button>
+            </a>
+          </div>
+
+          <div class="music-link">
+            <button class="play-pause-link-btn" id="musicBtn3" onclick="playMusic('2cellos')">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <span>2CELLOS - Now We Are Free</span>
+            <a href="https://youtu.be/ZTxP_lHw1ac" class="link" target="_blank">
+              <button class="play-pause-link-btn" id="link-button">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </button>
+            </a>
+          </div>
+
+          <div class="music-link">
+            <span>Lofi Radio Hip Hop -Live</span>
+            <a href="https://youtu.be/jfKfPfyJRdk" class="link" target="_blank">
+              <button class="play-pause-link-btn" id="link-button">
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </button>
+            </a>
+          </div>
+          
+        </div>
+      </div>
     </div>
+  </div>
 
+  <section class="task-container">
     <h2>Tasks</h2>
-
     <div class="tasks-list">
       <!-- <div class="todo">
         <div class="check-done">
@@ -50,7 +110,25 @@
       </div> -->
     </div>
   </section>
-  
-  <script src="script.js"></script>
+
+  <audio id="experience" controls style="display:none">
+    <source src="sounds/Einaudi_ Experience.mp3" type="audio/mpeg"> 
+  </audio>
+
+  <audio id="Le-Jardin" controls style="display:none">
+    <source src="sounds/Stephan Moccio - Le Jardin de Monsieur Monet (Visualiser).mp3" type="audio/mpeg"> 
+  </audio>
+
+  <audio id="2CELLOS" controls style="display:none">
+    <source src="sounds/2CELLOS - Now We Are Free.mp3" type="audio/mpeg"> 
+  </audio>
+
+  <audio id="alarm" controls style="display:none">
+    <source src="sounds/Timer Sound Effect.mp3" type="audio/mpeg"> 
+  </audio>
+
+  <script src="tasks.js"></script>
+  <script src="timer.js"></script>
+  <script src="playMusic.js"></script>
 </body>
 </html>
