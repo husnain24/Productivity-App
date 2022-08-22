@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"  />
 
   <title>TO DO LIST</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/styles/tasks.css">
+  <link rel="stylesheet" href="/styles/timer.css">
+  <link rel="stylesheet" href="/styles/playMusic.css">
 </head>
 <body>
   <header>
@@ -21,6 +23,25 @@
       <button id="new-task-submit">Add</button>
     </form>
   </header>
+
+  <section class="task-container">
+    <h2>Tasks</h2>
+    <div class="tasks-list">
+      <!-- A layout of how a task is structured -->
+      <!-- <div class="todo">
+        <div class="check-done">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <input type="text" class="todo-text" value="hello" readonly>
+        <div class="edit">
+          <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+        <div class="delete">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+      </div> -->
+    </div>
+  </section>
 
   <div class="time-music-container">
     <div class="time-music-grid">
@@ -92,25 +113,6 @@
       </div>
     </div>
   </div>
-
-  <section class="task-container">
-    <h2>Tasks</h2>
-    <div class="tasks-list">
-      <!-- <div class="todo">
-        <div class="check-done">
-          <i class="fa-solid fa-check"></i>
-        </div>
-        <input type="text" class="todo-text" value="hello" readonly>
-        <div class="edit">
-          <i class="fa-solid fa-pen-to-square"></i>
-        </div>
-        <div class="delete">
-          <i class="fa-solid fa-circle-xmark"></i>
-        </div>
-      </div> -->
-    </div>
-  </section>
-
   <audio id="experience" controls style="display:none">
     <source src="sounds/Einaudi_ Experience.mp3" type="audio/mpeg"> 
   </audio>

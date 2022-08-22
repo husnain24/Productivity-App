@@ -1,0 +1,61 @@
+/* Timing container styling */
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-image: linear-gradient(to right top, #1170ff, #6866ff, #9856fc, #c03ff2, #e300e3);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 5px;
+  border: solid 2px;
+}
+
+.time-container h3 {
+  font-size: 2rem;
+}
+
+.time-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.time-container span {
+  font-size: 1rem;
+}
+
+.time-container input {
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  width: 70%;
+}
+
+.time-container .time {
+  font-size: 5rem;
+}
+
+.time-container .timeButton {
+  padding: 0.45rem;
+  border-radius: 0.5rem;
+  border: solid white 2px;
+  background-color: #0082c6;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.time-container .timeButton:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+.time-container .timeButton:active {
+  opacity: 0.6;
+}
